@@ -1,0 +1,766 @@
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Progressive Socialists of America — The Plan</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Space+Mono:wght@400;700&family=Bebas+Neue&family=IBM+Plex+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --red: #CC2936;
+    --deep-red: #8B0000;
+    --black: #0A0A0A;
+    --off-white: #F2EFE7;
+    --cream: #EDE8DC;
+    --gold: #C9A84C;
+    --dark-gold: #8B6914;
+    --text: #1A1A1A;
+    --muted: #5A5A5A;
+  }
+
+- { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+background: var(–off-white);
+color: var(–text);
+font-family: ‘IBM Plex Sans’, sans-serif;
+font-size: 17px;
+line-height: 1.7;
+overflow-x: hidden;
+}
+
+/* HERO */
+.hero {
+background: var(–black);
+color: var(–off-white);
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 80px 40px 60px;
+position: relative;
+overflow: hidden;
+}
+
+.hero::before {
+content: ‘’;
+position: absolute;
+inset: 0;
+background:
+repeating-linear-gradient(
+0deg,
+transparent,
+transparent 60px,
+rgba(204,41,54,0.04) 60px,
+rgba(204,41,54,0.04) 61px
+),
+repeating-linear-gradient(
+90deg,
+transparent,
+transparent 60px,
+rgba(204,41,54,0.04) 60px,
+rgba(204,41,54,0.04) 61px
+);
+pointer-events: none;
+}
+
+.hero-eyebrow {
+font-family: ‘Space Mono’, monospace;
+font-size: 11px;
+letter-spacing: 0.3em;
+text-transform: uppercase;
+color: var(–gold);
+margin-bottom: 32px;
+opacity: 0;
+animation: fadeUp 0.8s ease 0.2s forwards;
+}
+
+.hero-star {
+font-size: 48px;
+color: var(–red);
+margin-bottom: 24px;
+opacity: 0;
+animation: fadeUp 0.8s ease 0.4s forwards;
+line-height: 1;
+}
+
+.hero h1 {
+font-family: ‘Bebas Neue’, sans-serif;
+font-size: clamp(64px, 12vw, 160px);
+line-height: 0.9;
+letter-spacing: 0.02em;
+color: var(–off-white);
+margin-bottom: 16px;
+opacity: 0;
+animation: fadeUp 0.8s ease 0.5s forwards;
+}
+
+.hero h1 span {
+color: var(–red);
+}
+
+.hero-sub {
+font-family: ‘DM Serif Display’, serif;
+font-style: italic;
+font-size: clamp(20px, 3vw, 32px);
+color: var(–gold);
+margin-bottom: 48px;
+opacity: 0;
+animation: fadeUp 0.8s ease 0.7s forwards;
+}
+
+.hero-tagline {
+font-family: ‘Space Mono’, monospace;
+font-size: clamp(13px, 1.5vw, 16px);
+color: rgba(242,239,231,0.6);
+letter-spacing: 0.1em;
+text-transform: uppercase;
+border-top: 1px solid rgba(204,41,54,0.4);
+padding-top: 32px;
+margin-top: 8px;
+opacity: 0;
+animation: fadeUp 0.8s ease 0.9s forwards;
+max-width: 600px;
+}
+
+.scroll-hint {
+position: absolute;
+bottom: 32px;
+left: 50%;
+transform: translateX(-50%);
+font-family: ‘Space Mono’, monospace;
+font-size: 10px;
+letter-spacing: 0.3em;
+color: rgba(242,239,231,0.3);
+text-transform: uppercase;
+animation: pulse 2s ease infinite 2s;
+}
+
+/* MANIFESTO BANNER */
+.manifesto-banner {
+background: var(–red);
+color: var(–off-white);
+padding: 20px 40px;
+text-align: center;
+font-family: ‘Bebas Neue’, sans-serif;
+font-size: clamp(18px, 3vw, 28px);
+letter-spacing: 0.15em;
+overflow: hidden;
+white-space: nowrap;
+}
+
+.marquee-inner {
+display: inline-block;
+animation: marquee 30s linear infinite;
+}
+
+.marquee-inner span {
+margin: 0 40px;
+color: rgba(255,255,255,0.5);
+}
+
+/* SECTIONS */
+.section {
+max-width: 860px;
+margin: 0 auto;
+padding: 80px 40px;
+}
+
+.section-full {
+padding: 80px 40px;
+}
+
+/* SECTION LABELS */
+.section-label {
+font-family: ‘Space Mono’, monospace;
+font-size: 10px;
+letter-spacing: 0.4em;
+text-transform: uppercase;
+color: var(–red);
+margin-bottom: 20px;
+display: flex;
+align-items: center;
+gap: 12px;
+}
+
+.section-label::after {
+content: ‘’;
+flex: 1;
+height: 1px;
+background: var(–red);
+opacity: 0.3;
+max-width: 120px;
+}
+
+/* PULL QUOTES */
+.pull-quote {
+background: var(–black);
+color: var(–off-white);
+padding: 60px 40px;
+margin: 60px 0;
+position: relative;
+overflow: hidden;
+}
+
+.pull-quote::before {
+content: ‘”’;
+font-family: ‘DM Serif Display’, serif;
+font-size: 280px;
+color: var(–red);
+opacity: 0.12;
+position: absolute;
+top: -60px;
+left: 20px;
+line-height: 1;
+pointer-events: none;
+}
+
+.pull-quote p {
+font-family: ‘DM Serif Display’, serif;
+font-size: clamp(22px, 3.5vw, 38px);
+line-height: 1.3;
+position: relative;
+z-index: 1;
+max-width: 700px;
+margin: 0 auto;
+text-align: center;
+}
+
+.pull-quote .attribution {
+font-family: ‘Space Mono’, monospace;
+font-size: 11px;
+letter-spacing: 0.2em;
+color: var(–gold);
+text-align: center;
+margin-top: 24px;
+text-transform: uppercase;
+}
+
+/* CHAPTER HEADERS */
+h2.chapter {
+font-family: ‘Bebas Neue’, sans-serif;
+font-size: clamp(48px, 8vw, 96px);
+line-height: 0.95;
+letter-spacing: 0.02em;
+color: var(–black);
+margin-bottom: 32px;
+}
+
+h2.chapter .accent {
+color: var(–red);
+}
+
+h3.subhead {
+font-family: ‘DM Serif Display’, serif;
+font-size: clamp(22px, 3vw, 30px);
+color: var(–black);
+margin: 48px 0 16px;
+border-left: 4px solid var(–red);
+padding-left: 20px;
+}
+
+p { margin-bottom: 20px; }
+
+p strong {
+color: var(–black);
+font-weight: 700;
+}
+
+/* STRIKETHROUGH CALLOUT */
+.strikeout {
+text-decoration: line-through;
+color: var(–muted);
+}
+
+/* HISTORICAL QUOTE BLOCKS */
+.hist-quote {
+border-left: 3px solid var(–gold);
+padding: 16px 24px;
+margin: 32px 0;
+background: rgba(201,168,76,0.06);
+}
+
+.hist-quote p {
+font-family: ‘DM Serif Display’, serif;
+font-style: italic;
+font-size: clamp(16px, 2vw, 20px);
+margin-bottom: 8px;
+color: var(–text);
+}
+
+.hist-quote .source {
+font-family: ‘Space Mono’, monospace;
+font-size: 10px;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+color: var(–dark-gold);
+margin: 0;
+}
+
+/* STAT BLOCKS */
+.stat-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 2px;
+margin: 48px 0;
+background: var(–black);
+}
+
+.stat-block {
+background: var(–cream);
+padding: 32px 24px;
+text-align: center;
+transition: background 0.2s;
+}
+
+.stat-block:hover { background: var(–off-white); }
+
+.stat-number {
+font-family: ‘Bebas Neue’, sans-serif;
+font-size: 56px;
+color: var(–red);
+line-height: 1;
+margin-bottom: 8px;
+}
+
+.stat-label {
+font-family: ‘Space Mono’, monospace;
+font-size: 10px;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+color: var(–muted);
+line-height: 1.5;
+}
+
+/* STRATEGY CARDS */
+.strategy-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+gap: 24px;
+margin: 40px 0;
+}
+
+.strategy-card {
+border: 1px solid rgba(0,0,0,0.12);
+padding: 32px 28px;
+background: white;
+position: relative;
+overflow: hidden;
+transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.strategy-card:hover {
+transform: translateY(-3px);
+box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+}
+
+.strategy-card::before {
+content: ‘’;
+position: absolute;
+top: 0; left: 0; right: 0;
+height: 3px;
+background: var(–red);
+}
+
+.card-num {
+font-family: ‘Bebas Neue’, sans-serif;
+font-size: 64px;
+color: rgba(204,41,54,0.08);
+line-height: 1;
+margin-bottom: 8px;
+}
+
+.card-title {
+font-family: ‘DM Serif Display’, serif;
+font-size: 20px;
+margin-bottom: 12px;
+color: var(–black);
+}
+
+.card-body {
+font-size: 15px;
+color: var(–muted);
+line-height: 1.6;
+margin: 0;
+}
+
+/* ATTACK / RESPONSE TABLE */
+.ar-table {
+width: 100%;
+border-collapse: collapse;
+margin: 40px 0;
+font-size: 15px;
+}
+
+.ar-table th {
+font-family: ‘Space Mono’, monospace;
+font-size: 10px;
+letter-spacing: 0.3em;
+text-transform: uppercase;
+background: var(–black);
+color: var(–gold);
+padding: 14px 20px;
+text-align: left;
+}
+
+.ar-table td {
+padding: 16px 20px;
+border-bottom: 1px solid rgba(0,0,0,0.08);
+vertical-align: top;
+}
+
+.ar-table tr:nth-child(even) td { background: var(–cream); }
+.ar-table tr:hover td { background: rgba(204,41,54,0.04); }
+
+.ar-table td:first-child {
+font-weight: 600;
+color: var(–deep-red);
+width: 35%;
+}
+
+/* TIMELINE */
+.timeline {
+position: relative;
+margin: 48px 0;
+padding-left: 0;
+}
+
+.timeline::before {
+content: ‘’;
+position: absolute;
+left: 28px;
+top: 0; bottom: 0;
+width: 2px;
+background: linear-gradient(to bottom, var(–red), var(–gold));
+}
+
+.timeline-item {
+display: flex;
+gap: 24px;
+margin-bottom: 40px;
+padding-left: 0;
+}
+
+.timeline-dot {
+flex-shrink: 0;
+width: 58px;
+height: 58px;
+background: var(–black);
+border: 2px solid var(–red);
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: ‘Bebas Neue’, sans-serif;
+font-size: 11px;
+letter-spacing: 0.1em;
+color: var(–gold);
+text-align: center;
+line-height: 1.2;
+}
+
+.timeline-content {
+padding-top: 12px;
+flex: 1;
+}
+
+.timeline-content h4 {
+font-family: ‘DM Serif Display’, serif;
+font-size: 20px;
+margin-bottom: 8px;
+}
+
+.timeline-content p {
+font-size: 15px;
+color: var(–muted);
+margin: 0;
+}
+
+/* SLOGAN WALL */
+.slogan-wall {
+background: var(–black);
+padding: 80px 40px;
+overflow: hidden;
+}
+
+.slogan-row {
+display: flex;
+flex-wrap: wrap;
+gap: 16px;
+margin-bottom: 16px;
+justify-content: center;
+}
+
+.slogan-tag {
+font-family: ‘Bebas Neue’, sans-serif;
+font-size: clamp(18px, 3vw, 32px);
+letter-spacing: 0.05em;
+padding: 8px 20px;
+border: 1px solid;
+cursor: default;
+transition: all 0.2s;
+}
+
+.slogan-tag.red { color: var(–red); border-color: var(–red); }
+.slogan-tag.gold { color: var(–gold); border-color: var(–gold); }
+.slogan-tag.white { color: var(–off-white); border-color: rgba(242,239,231,0.3); }
+
+.slogan-tag:hover {
+background: var(–red);
+color: white;
+border-color: var(–red);
+}
+
+/* CLOSING CTA */
+.cta-section {
+background: var(–red);
+color: var(–off-white);
+padding: 100px 40px;
+text-align: center;
+position: relative;
+overflow: hidden;
+}
+
+.cta-section::before {
+content: ‘★’;
+font-size: 600px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: rgba(0,0,0,0.08);
+line-height: 1;
+pointer-events: none;
+}
+
+.cta-section h2 {
+font-family: ‘Bebas Neue’, sans-serif;
+font-size: clamp(56px, 10vw, 140px);
+line-height: 0.9;
+letter-spacing: 0.02em;
+position: relative;
+z-index: 1;
+margin-bottom: 32px;
+}
+
+.cta-section p {
+font-family: ‘DM Serif Display’, serif;
+font-style: italic;
+font-size: clamp(18px, 2.5vw, 26px);
+max-width: 600px;
+margin: 0 auto 48px;
+opacity: 0.9;
+position: relative;
+z-index: 1;
+}
+
+.cta-btn {
+display: inline-block;
+background: var(–off-white);
+color: var(–red);
+font-family: ‘Space Mono’, monospace;
+font-size: 13px;
+letter-spacing: 0.25em;
+text-transform: uppercase;
+text-decoration: none;
+padding: 18px 48px;
+font-weight: 700;
+transition: all 0.2s;
+position: relative;
+z-index: 1;
+}
+
+.cta-btn:hover {
+background: var(–black);
+color: var(–off-white);
+}
+
+/* DIVIDER */
+.divider {
+display: flex;
+align-items: center;
+gap: 16px;
+margin: 64px 0 48px;
+}
+
+.divider::before, .divider::after {
+content: ‘’;
+flex: 1;
+height: 1px;
+background: rgba(0,0,0,0.12);
+}
+
+.divider-star {
+color: var(–red);
+font-size: 18px;
+}
+
+/* CHAPTER BREAK */
+.chapter-break {
+background: var(–black);
+color: var(–off-white);
+padding: 60px 40px;
+margin: 0;
+}
+
+.chapter-break-inner {
+max-width: 860px;
+margin: 0 auto;
+}
+
+.chapter-break .ch-num {
+font-family: ‘Space Mono’, monospace;
+font-size: 10px;
+letter-spacing: 0.4em;
+color: var(–red);
+text-transform: uppercase;
+margin-bottom: 16px;
+}
+
+.chapter-break h2 {
+font-family: ‘Bebas Neue’, sans-serif;
+font-size: clamp(48px, 8vw, 100px);
+letter-spacing: 0.02em;
+line-height: 0.95;
+color: var(–off-white);
+}
+
+.chapter-break h2 em {
+color: var(–gold);
+font-style: normal;
+}
+
+/* FOOTNOTE STYLE TEXT */
+.footnote {
+font-family: ‘Space Mono’, monospace;
+font-size: 12px;
+color: var(–muted);
+border-top: 1px solid rgba(0,0,0,0.1);
+padding-top: 12px;
+margin-top: 32px;
+}
+
+/* NAV */
+nav {
+position: fixed;
+top: 0; left: 0; right: 0;
+z-index: 100;
+background: rgba(10,10,10,0.95);
+backdrop-filter: blur(8px);
+padding: 0 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+height: 56px;
+border-bottom: 1px solid rgba(204,41,54,0.3);
+}
+
+.nav-logo {
+font-family: ‘Bebas Neue’, sans-serif;
+font-size: 22px;
+color: var(–off-white);
+letter-spacing: 0.1em;
+}
+
+.nav-logo span { color: var(–red); }
+
+.nav-links {
+display: flex;
+gap: 32px;
+list-style: none;
+}
+
+.nav-links a {
+font-family: ‘Space Mono’, monospace;
+font-size: 10px;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+color: rgba(242,239,231,0.5);
+text-decoration: none;
+transition: color 0.2s;
+}
+
+.nav-links a:hover { color: var(–red); }
+
+@media (max-width: 600px) {
+.nav-links { display: none; }
+.section, .section-full { padding: 60px 24px; }
+.pull-quote { padding: 40px 24px; }
+.slogan-wall { padding: 60px 24px; }
+.cta-section { padding: 80px 24px; }
+.chapter-break { padding: 40px 24px; }
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+from { opacity: 0; transform: translateY(24px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+0%, 100% { opacity: 0.3; }
+50% { opacity: 0.7; }
+}
+
+@keyframes marquee {
+from { transform: translateX(0); }
+to { transform: translateX(-50%); }
+}
+
+/* LISTS */
+ul.styled {
+list-style: none;
+margin: 16px 0 24px;
+padding: 0;
+}
+
+ul.styled li {
+padding: 10px 0 10px 28px;
+position: relative;
+border-bottom: 1px solid rgba(0,0,0,0.06);
+font-size: 16px;
+color: var(–text);
+}
+
+ul.styled li::before {
+content: ‘★’;
+color: var(–red);
+position: absolute;
+left: 0;
+font-size: 12px;
+top: 13px;
+}
+
+/* BIG TEXT ACCENT */
+.big-accent {
+font-family: ‘Bebas Neue’, sans-serif;
+font-size: clamp(80px, 15vw, 200px);
+line-height: 0.85;
+color: rgba(204,41,54,0.07);
+pointer-events: none;
+margin: -20px 0;
+display: block;
+}
+
+.inline-red { color: var(–red); font-weight: 700; }
+.inline-gold { color: var(–dark-gold); font-style: italic; }
+
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">PSA<span>★</span></div>
+  <ul class="nav-links">
+    <li><a href="#rupture">The Rupture</a></li>
+    <li><a href="#crowd">100,000</a></li>
+    <li><a href="#platform">Platform</a></li>
+    <li><a href="#california">California</a></li>
+    <li><a href="#slogans">Slogans</a></li>
+    <li><a href="#join">Join</a></li>
+  </ul>
+</nav>
