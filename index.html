@@ -1,10 +1,13 @@
+<!DOCTYPE html>
 
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Progressive Socialists of America — The Plan</title>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Space+Mono:wght@400;700&family=Bebas+Neue&family=IBM+Plex+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Sans:wght@300;400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
   :root {
     --red: #CC2936;
@@ -23,9 +26,10 @@
 html { scroll-behavior: smooth; }
 
 body {
-background: var(–off-white);
-color: var(–text);
-font-family: ‘IBM Plex Sans’, sans-serif;
+background: #F2EFE7;
+background-color: #F2EFE7;
+color: #1A1A1A;
+font-family: ‘IBM Plex Sans’, -apple-system, BlinkMacSystemFont, ‘Segoe UI’, Arial, sans-serif;
 font-size: 17px;
 line-height: 1.7;
 overflow-x: hidden;
@@ -33,8 +37,9 @@ overflow-x: hidden;
 
 /* HERO */
 .hero {
-background: var(–black);
-color: var(–off-white);
+background: #0A0A0A;
+background-color: #0A0A0A;
+color: #F2EFE7;
 min-height: 100vh;
 display: flex;
 flex-direction: column;
@@ -69,11 +74,11 @@ pointer-events: none;
 }
 
 .hero-eyebrow {
-font-family: ‘Space Mono’, monospace;
+font-family: ‘Space Mono’, ‘Courier New’, Courier, monospace;
 font-size: 11px;
 letter-spacing: 0.3em;
 text-transform: uppercase;
-color: var(–gold);
+color: #C9A84C;
 margin-bottom: 32px;
 opacity: 0;
 animation: fadeUp 0.8s ease 0.2s forwards;
@@ -81,7 +86,7 @@ animation: fadeUp 0.8s ease 0.2s forwards;
 
 .hero-star {
 font-size: 48px;
-color: var(–red);
+color: #CC2936;
 margin-bottom: 24px;
 opacity: 0;
 animation: fadeUp 0.8s ease 0.4s forwards;
@@ -89,32 +94,32 @@ line-height: 1;
 }
 
 .hero h1 {
-font-family: ‘Bebas Neue’, sans-serif;
+font-family: ‘Bebas Neue’, Impact, ‘Arial Narrow’, sans-serif;
 font-size: clamp(64px, 12vw, 160px);
 line-height: 0.9;
 letter-spacing: 0.02em;
-color: var(–off-white);
+color: #F2EFE7;
 margin-bottom: 16px;
 opacity: 0;
 animation: fadeUp 0.8s ease 0.5s forwards;
 }
 
 .hero h1 span {
-color: var(–red);
+color: #CC2936;
 }
 
 .hero-sub {
-font-family: ‘DM Serif Display’, serif;
+font-family: ‘DM Serif Display’, Georgia, ‘Times New Roman’, serif;
 font-style: italic;
 font-size: clamp(20px, 3vw, 32px);
-color: var(–gold);
+color: #C9A84C;
 margin-bottom: 48px;
 opacity: 0;
 animation: fadeUp 0.8s ease 0.7s forwards;
 }
 
 .hero-tagline {
-font-family: ‘Space Mono’, monospace;
+font-family: ‘Space Mono’, ‘Courier New’, Courier, monospace;
 font-size: clamp(13px, 1.5vw, 16px);
 color: rgba(242,239,231,0.6);
 letter-spacing: 0.1em;
@@ -132,7 +137,7 @@ position: absolute;
 bottom: 32px;
 left: 50%;
 transform: translateX(-50%);
-font-family: ‘Space Mono’, monospace;
+font-family: ‘Space Mono’, ‘Courier New’, Courier, monospace;
 font-size: 10px;
 letter-spacing: 0.3em;
 color: rgba(242,239,231,0.3);
@@ -142,11 +147,11 @@ animation: pulse 2s ease infinite 2s;
 
 /* MANIFESTO BANNER */
 .manifesto-banner {
-background: var(–red);
-color: var(–off-white);
+background: #CC2936;
+color: #F2EFE7;
 padding: 20px 40px;
 text-align: center;
-font-family: ‘Bebas Neue’, sans-serif;
+font-family: ‘Bebas Neue’, Impact, ‘Arial Narrow’, sans-serif;
 font-size: clamp(18px, 3vw, 28px);
 letter-spacing: 0.15em;
 overflow: hidden;
@@ -176,11 +181,11 @@ padding: 80px 40px;
 
 /* SECTION LABELS */
 .section-label {
-font-family: ‘Space Mono’, monospace;
+font-family: ‘Space Mono’, ‘Courier New’, Courier, monospace;
 font-size: 10px;
 letter-spacing: 0.4em;
 text-transform: uppercase;
-color: var(–red);
+color: #CC2936;
 margin-bottom: 20px;
 display: flex;
 align-items: center;
@@ -191,15 +196,15 @@ gap: 12px;
 content: ‘’;
 flex: 1;
 height: 1px;
-background: var(–red);
+background: #CC2936;
 opacity: 0.3;
 max-width: 120px;
 }
 
 /* PULL QUOTES */
 .pull-quote {
-background: var(–black);
-color: var(–off-white);
+background: #0A0A0A;
+color: #F2EFE7;
 padding: 60px 40px;
 margin: 60px 0;
 position: relative;
@@ -208,9 +213,9 @@ overflow: hidden;
 
 .pull-quote::before {
 content: ‘”’;
-font-family: ‘DM Serif Display’, serif;
+font-family: ‘DM Serif Display’, Georgia, ‘Times New Roman’, serif;
 font-size: 280px;
-color: var(–red);
+color: #CC2936;
 opacity: 0.12;
 position: absolute;
 top: -60px;
@@ -220,7 +225,7 @@ pointer-events: none;
 }
 
 .pull-quote p {
-font-family: ‘DM Serif Display’, serif;
+font-family: ‘DM Serif Display’, Georgia, ‘Times New Roman’, serif;
 font-size: clamp(22px, 3.5vw, 38px);
 line-height: 1.3;
 position: relative;
@@ -231,10 +236,10 @@ text-align: center;
 }
 
 .pull-quote .attribution {
-font-family: ‘Space Mono’, monospace;
+font-family: ‘Space Mono’, ‘Courier New’, Courier, monospace;
 font-size: 11px;
 letter-spacing: 0.2em;
-color: var(–gold);
+color: #C9A84C;
 text-align: center;
 margin-top: 24px;
 text-transform: uppercase;
@@ -242,62 +247,62 @@ text-transform: uppercase;
 
 /* CHAPTER HEADERS */
 h2.chapter {
-font-family: ‘Bebas Neue’, sans-serif;
+font-family: ‘Bebas Neue’, Impact, ‘Arial Narrow’, sans-serif;
 font-size: clamp(48px, 8vw, 96px);
 line-height: 0.95;
 letter-spacing: 0.02em;
-color: var(–black);
+color: #0A0A0A;
 margin-bottom: 32px;
 }
 
 h2.chapter .accent {
-color: var(–red);
+color: #CC2936;
 }
 
 h3.subhead {
-font-family: ‘DM Serif Display’, serif;
+font-family: ‘DM Serif Display’, Georgia, ‘Times New Roman’, serif;
 font-size: clamp(22px, 3vw, 30px);
-color: var(–black);
+color: #0A0A0A;
 margin: 48px 0 16px;
-border-left: 4px solid var(–red);
+border-left: 4px solid #CC2936;
 padding-left: 20px;
 }
 
 p { margin-bottom: 20px; }
 
 p strong {
-color: var(–black);
+color: #0A0A0A;
 font-weight: 700;
 }
 
 /* STRIKETHROUGH CALLOUT */
 .strikeout {
 text-decoration: line-through;
-color: var(–muted);
+color: #5A5A5A;
 }
 
 /* HISTORICAL QUOTE BLOCKS */
 .hist-quote {
-border-left: 3px solid var(–gold);
+border-left: 3px solid #C9A84C;
 padding: 16px 24px;
 margin: 32px 0;
 background: rgba(201,168,76,0.06);
 }
 
 .hist-quote p {
-font-family: ‘DM Serif Display’, serif;
+font-family: ‘DM Serif Display’, Georgia, ‘Times New Roman’, serif;
 font-style: italic;
 font-size: clamp(16px, 2vw, 20px);
 margin-bottom: 8px;
-color: var(–text);
+color: #1A1A1A;
 }
 
 .hist-quote .source {
-font-family: ‘Space Mono’, monospace;
+font-family: ‘Space Mono’, ‘Courier New’, Courier, monospace;
 font-size: 10px;
 letter-spacing: 0.2em;
 text-transform: uppercase;
-color: var(–dark-gold);
+color: #8B6914;
 margin: 0;
 }
 
@@ -307,32 +312,32 @@ display: grid;
 grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 gap: 2px;
 margin: 48px 0;
-background: var(–black);
+background: #0A0A0A;
 }
 
 .stat-block {
-background: var(–cream);
+background: #EDE8DC;
 padding: 32px 24px;
 text-align: center;
 transition: background 0.2s;
 }
 
-.stat-block:hover { background: var(–off-white); }
+.stat-block:hover { background: #F2EFE7; }
 
 .stat-number {
-font-family: ‘Bebas Neue’, sans-serif;
+font-family: ‘Bebas Neue’, Impact, ‘Arial Narrow’, sans-serif;
 font-size: 56px;
-color: var(–red);
+color: #CC2936;
 line-height: 1;
 margin-bottom: 8px;
 }
 
 .stat-label {
-font-family: ‘Space Mono’, monospace;
+font-family: ‘Space Mono’, ‘Courier New’, Courier, monospace;
 font-size: 10px;
 letter-spacing: 0.2em;
 text-transform: uppercase;
-color: var(–muted);
+color: #5A5A5A;
 line-height: 1.5;
 }
 
@@ -363,11 +368,11 @@ content: ‘’;
 position: absolute;
 top: 0; left: 0; right: 0;
 height: 3px;
-background: var(–red);
+background: #CC2936;
 }
 
 .card-num {
-font-family: ‘Bebas Neue’, sans-serif;
+font-family: ‘Bebas Neue’, Impact, ‘Arial Narrow’, sans-serif;
 font-size: 64px;
 color: rgba(204,41,54,0.08);
 line-height: 1;
@@ -375,15 +380,15 @@ margin-bottom: 8px;
 }
 
 .card-title {
-font-family: ‘DM Serif Display’, serif;
+font-family: ‘DM Serif Display’, Georgia, ‘Times New Roman’, serif;
 font-size: 20px;
 margin-bottom: 12px;
-color: var(–black);
+color: #0A0A0A;
 }
 
 .card-body {
 font-size: 15px;
-color: var(–muted);
+color: #5A5A5A;
 line-height: 1.6;
 margin: 0;
 }
@@ -397,12 +402,12 @@ font-size: 15px;
 }
 
 .ar-table th {
-font-family: ‘Space Mono’, monospace;
+font-family: ‘Space Mono’, ‘Courier New’, Courier, monospace;
 font-size: 10px;
 letter-spacing: 0.3em;
 text-transform: uppercase;
-background: var(–black);
-color: var(–gold);
+background: #0A0A0A;
+color: #C9A84C;
 padding: 14px 20px;
 text-align: left;
 }
@@ -413,12 +418,12 @@ border-bottom: 1px solid rgba(0,0,0,0.08);
 vertical-align: top;
 }
 
-.ar-table tr:nth-child(even) td { background: var(–cream); }
+.ar-table tr:nth-child(even) td { background: #EDE8DC; }
 .ar-table tr:hover td { background: rgba(204,41,54,0.04); }
 
 .ar-table td:first-child {
 font-weight: 600;
-color: var(–deep-red);
+color: #8B0000;
 width: 35%;
 }
 
@@ -435,7 +440,7 @@ position: absolute;
 left: 28px;
 top: 0; bottom: 0;
 width: 2px;
-background: linear-gradient(to bottom, var(–red), var(–gold));
+background: linear-gradient(to bottom, #CC2936, #C9A84C);
 }
 
 .timeline-item {
@@ -449,16 +454,16 @@ padding-left: 0;
 flex-shrink: 0;
 width: 58px;
 height: 58px;
-background: var(–black);
-border: 2px solid var(–red);
+background: #0A0A0A;
+border: 2px solid #CC2936;
 border-radius: 50%;
 display: flex;
 align-items: center;
 justify-content: center;
-font-family: ‘Bebas Neue’, sans-serif;
+font-family: ‘Bebas Neue’, Impact, ‘Arial Narrow’, sans-serif;
 font-size: 11px;
 letter-spacing: 0.1em;
-color: var(–gold);
+color: #C9A84C;
 text-align: center;
 line-height: 1.2;
 }
@@ -469,20 +474,20 @@ flex: 1;
 }
 
 .timeline-content h4 {
-font-family: ‘DM Serif Display’, serif;
+font-family: ‘DM Serif Display’, Georgia, ‘Times New Roman’, serif;
 font-size: 20px;
 margin-bottom: 8px;
 }
 
 .timeline-content p {
 font-size: 15px;
-color: var(–muted);
+color: #5A5A5A;
 margin: 0;
 }
 
 /* SLOGAN WALL */
 .slogan-wall {
-background: var(–black);
+background: #0A0A0A;
 padding: 80px 40px;
 overflow: hidden;
 }
@@ -496,7 +501,7 @@ justify-content: center;
 }
 
 .slogan-tag {
-font-family: ‘Bebas Neue’, sans-serif;
+font-family: ‘Bebas Neue’, Impact, ‘Arial Narrow’, sans-serif;
 font-size: clamp(18px, 3vw, 32px);
 letter-spacing: 0.05em;
 padding: 8px 20px;
@@ -505,20 +510,20 @@ cursor: default;
 transition: all 0.2s;
 }
 
-.slogan-tag.red { color: var(–red); border-color: var(–red); }
-.slogan-tag.gold { color: var(–gold); border-color: var(–gold); }
-.slogan-tag.white { color: var(–off-white); border-color: rgba(242,239,231,0.3); }
+.slogan-tag.red { color: #CC2936; border-color: #CC2936; }
+.slogan-tag.gold { color: #C9A84C; border-color: #C9A84C; }
+.slogan-tag.white { color: #F2EFE7; border-color: rgba(242,239,231,0.3); }
 
 .slogan-tag:hover {
-background: var(–red);
+background: #CC2936;
 color: white;
-border-color: var(–red);
+border-color: #CC2936;
 }
 
 /* CLOSING CTA */
 .cta-section {
-background: var(–red);
-color: var(–off-white);
+background: #CC2936;
+color: #F2EFE7;
 padding: 100px 40px;
 text-align: center;
 position: relative;
@@ -538,7 +543,7 @@ pointer-events: none;
 }
 
 .cta-section h2 {
-font-family: ‘Bebas Neue’, sans-serif;
+font-family: ‘Bebas Neue’, Impact, ‘Arial Narrow’, sans-serif;
 font-size: clamp(56px, 10vw, 140px);
 line-height: 0.9;
 letter-spacing: 0.02em;
@@ -548,7 +553,7 @@ margin-bottom: 32px;
 }
 
 .cta-section p {
-font-family: ‘DM Serif Display’, serif;
+font-family: ‘DM Serif Display’, Georgia, ‘Times New Roman’, serif;
 font-style: italic;
 font-size: clamp(18px, 2.5vw, 26px);
 max-width: 600px;
@@ -560,9 +565,9 @@ z-index: 1;
 
 .cta-btn {
 display: inline-block;
-background: var(–off-white);
-color: var(–red);
-font-family: ‘Space Mono’, monospace;
+background: #F2EFE7;
+color: #CC2936;
+font-family: ‘Space Mono’, ‘Courier New’, Courier, monospace;
 font-size: 13px;
 letter-spacing: 0.25em;
 text-transform: uppercase;
@@ -575,8 +580,8 @@ z-index: 1;
 }
 
 .cta-btn:hover {
-background: var(–black);
-color: var(–off-white);
+background: #0A0A0A;
+color: #F2EFE7;
 }
 
 /* DIVIDER */
@@ -595,14 +600,14 @@ background: rgba(0,0,0,0.12);
 }
 
 .divider-star {
-color: var(–red);
+color: #CC2936;
 font-size: 18px;
 }
 
 /* CHAPTER BREAK */
 .chapter-break {
-background: var(–black);
-color: var(–off-white);
+background: #0A0A0A;
+color: #F2EFE7;
 padding: 60px 40px;
 margin: 0;
 }
@@ -613,32 +618,32 @@ margin: 0 auto;
 }
 
 .chapter-break .ch-num {
-font-family: ‘Space Mono’, monospace;
+font-family: ‘Space Mono’, ‘Courier New’, Courier, monospace;
 font-size: 10px;
 letter-spacing: 0.4em;
-color: var(–red);
+color: #CC2936;
 text-transform: uppercase;
 margin-bottom: 16px;
 }
 
 .chapter-break h2 {
-font-family: ‘Bebas Neue’, sans-serif;
+font-family: ‘Bebas Neue’, Impact, ‘Arial Narrow’, sans-serif;
 font-size: clamp(48px, 8vw, 100px);
 letter-spacing: 0.02em;
 line-height: 0.95;
-color: var(–off-white);
+color: #F2EFE7;
 }
 
 .chapter-break h2 em {
-color: var(–gold);
+color: #C9A84C;
 font-style: normal;
 }
 
 /* FOOTNOTE STYLE TEXT */
 .footnote {
-font-family: ‘Space Mono’, monospace;
+font-family: ‘Space Mono’, ‘Courier New’, Courier, monospace;
 font-size: 12px;
-color: var(–muted);
+color: #5A5A5A;
 border-top: 1px solid rgba(0,0,0,0.1);
 padding-top: 12px;
 margin-top: 32px;
@@ -660,13 +665,13 @@ border-bottom: 1px solid rgba(204,41,54,0.3);
 }
 
 .nav-logo {
-font-family: ‘Bebas Neue’, sans-serif;
+font-family: ‘Bebas Neue’, Impact, ‘Arial Narrow’, sans-serif;
 font-size: 22px;
-color: var(–off-white);
+color: #F2EFE7;
 letter-spacing: 0.1em;
 }
 
-.nav-logo span { color: var(–red); }
+.nav-logo span { color: #CC2936; }
 
 .nav-links {
 display: flex;
@@ -675,7 +680,7 @@ list-style: none;
 }
 
 .nav-links a {
-font-family: ‘Space Mono’, monospace;
+font-family: ‘Space Mono’, ‘Courier New’, Courier, monospace;
 font-size: 10px;
 letter-spacing: 0.2em;
 text-transform: uppercase;
@@ -684,7 +689,7 @@ text-decoration: none;
 transition: color 0.2s;
 }
 
-.nav-links a:hover { color: var(–red); }
+.nav-links a:hover { color: #CC2936; }
 
 @media (max-width: 600px) {
 .nav-links { display: none; }
@@ -723,12 +728,12 @@ padding: 10px 0 10px 28px;
 position: relative;
 border-bottom: 1px solid rgba(0,0,0,0.06);
 font-size: 16px;
-color: var(–text);
+color: #1A1A1A;
 }
 
 ul.styled li::before {
 content: ‘★’;
-color: var(–red);
+color: #CC2936;
 position: absolute;
 left: 0;
 font-size: 12px;
@@ -737,7 +742,7 @@ top: 13px;
 
 /* BIG TEXT ACCENT */
 .big-accent {
-font-family: ‘Bebas Neue’, sans-serif;
+font-family: ‘Bebas Neue’, Impact, ‘Arial Narrow’, sans-serif;
 font-size: clamp(80px, 15vw, 200px);
 line-height: 0.85;
 color: rgba(204,41,54,0.07);
@@ -746,15 +751,15 @@ margin: -20px 0;
 display: block;
 }
 
-.inline-red { color: var(–red); font-weight: 700; }
-.inline-gold { color: var(–dark-gold); font-style: italic; }
+.inline-red { color: #CC2936; font-weight: 700; }
+.inline-gold { color: #8B6914; font-style: italic; }
 
 </style>
 </head>
 <body>
 
 <nav>
-  <div class="nav-logo">PSA<span>★</span></div>
+  <div class="nav-logo">PSA<span>&#9733;</span></div>
   <ul class="nav-links">
     <li><a href="#rupture">The Rupture</a></li>
     <li><a href="#crowd">100,000</a></li>
@@ -764,11 +769,12 @@ display: block;
     <li><a href="#join">Join</a></li>
   </ul>
 </nav>
+
 <!-- HERO -->
 
 <section class="hero" id="top">
   <div class="hero-eyebrow">Founded 2025 · Blue States · No Apologies</div>
-  <div class="hero-star">★</div>
+  <div class="hero-star">&#9733;</div>
   <h1>Progressive<br><span>Socialists</span><br>of America</h1>
   <div class="hero-sub">They had the power. We'll use it.</div>
   <div class="hero-tagline">California · Oregon · Washington · New York · The Future</div>
@@ -779,7 +785,7 @@ display: block;
 
 <div class="manifesto-banner">
   <div class="marquee-inner">
-    TAX THE RICH <span>★</span> PEOPLE OVER PROFIT <span>★</span> ECONOMIC DEMOCRACY <span>★</span> THE UNION MAKES US STRONG <span>★</span> DARE TO STRUGGLE, DARE TO WIN <span>★</span> LIVING WAGE NOW <span>★</span> ABOLISH ICE <span>★</span> CLOSE THE CAMPS <span>★</span> MEDICARE FOR ALL <span>★</span> HOUSING FOR ALL <span>★</span> JOBS FOR ALL <span>★</span> DARE TO STRUGGLE, DARE TO WIN <span>★</span> FROM EACH ACCORDING TO THEIR ABILITY <span>★</span> WE ARE THE ONES WE HAVE BEEN WAITING FOR <span>★</span>
+    TAX THE RICH <span>&#9733;</span> ABOLISH ICE <span>&#9733;</span> LIVING WAGE NOW <span>&#9733;</span> MEDICARE FOR ALL <span>&#9733;</span> CLOSE THE CAMPS <span>&#9733;</span> PEOPLE OVER PROFIT <span>&#9733;</span> ECONOMIC DEMOCRACY <span>&#9733;</span> AMRS EMBARGO NOW <span>&#9733;</span> MAKE THEM PAY <span>&#9733;</span> SCRAP THE CAP <span>&#9733;</span> BOOKS NOT BOMBS <span>&#9733;</span> DARE TO STRUGGLE, DARE TO WIN <span>&#9733;</span> PARKS NOT PIPELINES <span>&#9733;</span> WE ARE THE ONES WE HAVE BEEN WAITING FOR <span>&#9733;</span>
   </div>
 </div>
 
@@ -976,7 +982,7 @@ display: block;
   </ul>
 
   <div class="footnote">
-    ★ Every plank is costed. Every bill is drafted. We don't do vibes-based policy. Ask us for the spreadsheet.
+    &#9733; Every plank is costed. Every bill is drafted. We don't do vibes-based policy. Ask us for the spreadsheet.
   </div>
 </section>
 
@@ -1123,8 +1129,8 @@ display: block;
 
 <div class="slogan-wall" id="slogans">
   <div style="text-align:center; margin-bottom: 48px;">
-    <div style="font-family:'Space Mono',monospace; font-size:10px; letter-spacing:0.4em; text-transform:uppercase; color:var(--gold); margin-bottom:16px;">Reclaimed & Reloaded</div>
-    <div style="font-family:'Bebas Neue',sans-serif; font-size:clamp(36px,6vw,72px); color:var(--off-white); line-height:1;">The Slogans That Won Before.<br><span style="color:var(--red);">Now They're Ours.</span></div>
+    <div style="font-family:'Space Mono',monospace; font-size:10px; letter-spacing:0.4em; text-transform:uppercase; color:#C9A84C; margin-bottom:16px;">Reclaimed & Reloaded</div>
+    <div style="font-family:'Bebas Neue',sans-serif; font-size:clamp(36px,6vw,72px); color:#F2EFE7; line-height:1;">The Slogans That Won Before.<br><span style="color:#CC2936;">Now They're Ours.</span></div>
   </div>
 
   <div class="slogan-row">
@@ -1212,7 +1218,7 @@ display: block;
       <div class="timeline-dot">YEAR<br>6+</div>
       <div class="timeline-content">
         <h4>The New Normal</h4>
-        <p>In California, Oregon, and Washington, the real political contest is Progressives vs. Democrats. Republicans are the third party. The realignment is complete. Democrats are now the conservatives. The PSA governs the future.</p>
+        <p>In California, Oregon, and Washington, the real political contest is PSA vs. Democrat. Republicans are the third party. The realignment is complete. Democrats are now the conservatives. The PSA governs the future.</p>
       </div>
     </div>
   </div>
@@ -1223,13 +1229,13 @@ display: block;
 <div class="cta-section" id="join">
   <h2>They Had<br>The Power.<br>We'll Use It.</h2>
   <p>The Democratic Party had its chance. In California, Oregon, Washington — they had total power and chose their donors. The PSA chooses you.</p>
-  <a href="#top" class="cta-btn">★ &nbsp; Join the Movement &nbsp; ★</a>
+  <a href="#top" class="cta-btn">&#9733; &nbsp; Join the Movement &nbsp; &#9733;</a>
 </div>
 
 <!-- FOOTER -->
 
-<div style="background: var(--black); padding: 40px; text-align:center;">
-  <div style="font-family:'Bebas Neue',sans-serif; font-size:32px; color:var(--red); margin-bottom:12px;">★ PSA ★</div>
+<div style="background: #0A0A0A; padding: 40px; text-align:center;">
+  <div style="font-family:'Bebas Neue',sans-serif; font-size:32px; color:#CC2936; margin-bottom:12px;">&#9733; PSA &#9733;</div>
   <div style="font-family:'Space Mono',monospace; font-size:10px; letter-spacing:0.3em; text-transform:uppercase; color:rgba(242,239,231,0.3);">
     Progressive Socialists of America &nbsp;·&nbsp; Blue States Only &nbsp;·&nbsp; No Corporate Money &nbsp;·&nbsp; No Apologies
   </div>
